@@ -1,4 +1,3 @@
-// public/sw.js
 const CACHE_NAME = 'devinterview-v1';
 
 const urlsToCache = ['/', '/tips', '/manifest.json'];
@@ -11,6 +10,8 @@ self.addEventListener('install', (event) => {
     })
   );
 });
+
+
 
 self.addEventListener('fetch', (event) => {
   event.respondWith(
